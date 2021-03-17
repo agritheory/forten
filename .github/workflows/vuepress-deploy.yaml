@@ -19,7 +19,7 @@ jobs:
         node-version: '12.x'
     - run: npm install
     - run: npm ci
-    - run: npm run build
+    - run: npm run docs:build
 
     - name: Init new repo in dist folder and commit generated files
       run: |
