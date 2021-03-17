@@ -4,7 +4,6 @@
 /off
 **/.cache
 **/coverage
-**/dist
 **/.env*
 **/*.log
 **/yarn.lock
