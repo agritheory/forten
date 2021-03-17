@@ -19,7 +19,7 @@ jobs:
         node-version: '12.x'
     - run: npm install
     - run: npm ci
-    - run: vuepress build docs
+    - run: npm run vuepress build docs
 
     - name: Init new repo in dist folder and commit generated files
       run: |
