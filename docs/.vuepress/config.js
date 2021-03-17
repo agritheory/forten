@@ -1,0 +1,26 @@
+module.exports = {
+  title: 'forten',
+  description: 'modular tools for overmind',
+  theme: 'vuepress-theme-succinct',
+  globalUIComponents: ['ThemeManager'],
+  themeConfig: {
+    displayAllHeaders: true,
+    sidebar: 'auto',
+    // nav: [
+    //   { text: 'home', link: '/' },
+    //   { text: 'build', link: '/build' },
+    //   { text: 'dragdrop', link: '/dragdrop' },
+    //   { text: 'editor', link: '/editor' },
+    //   { text: 'hooks', link: '/hooks' },
+    //   { text: 'locale', link: '/locale' },
+    //   { text: 'preferences', link: '/preferences' },
+    //   { text: 'story', link: '/story' },
+    //   { text: 'styled', link: '/styled' },
+    //   { text: 'theme', link: '/theme' },
+    //   { text: 'tree', link: '/tree' },
+    //   { text: 'tree-type', link: '/tree-type' },
+    //   { text: 'tree-view', link: '/tree-view' },
+    //   { text: 'user agent', link: '/useragent' },
+    // ],
+  },
+}
