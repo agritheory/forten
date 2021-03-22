@@ -11,7 +11,6 @@ jobs:
       uses: agritheory/forten
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        TARGET_REPO: agritheory/forten
         TARGET_BRANCH: gh-pages
         BUILD_SCRIPT: npm run docs:build
         BUILD_DIR: docs/.vuepress/dist/
