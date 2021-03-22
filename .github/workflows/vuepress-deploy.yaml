@@ -9,8 +9,8 @@ jobs:
     - name: Checkout
       uses: actions/checkout@master
 
-    - name: vuepress-deploy
-      uses: agritheory/vuepress-deploy@master
+    - name: forten
+      uses: agritheory/forten@master
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         TARGET_REPO: agritheory/forten
