@@ -1,7 +1,7 @@
 name: Deploy Documentation Site
 on: [push]
 jobs:
-	integration-test:
+	build-and-deploy:
 		runs-on: ubuntu-latest
 		steps:
 			- name: Checkout
