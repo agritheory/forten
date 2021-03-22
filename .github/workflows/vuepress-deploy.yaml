@@ -7,13 +7,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@master
+      uses: actions/checkout@docs-vuepress
 
     - name: forten
-      uses: agritheory/forten@master
+      uses: agritheory/forten@docs-vuepress
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         TARGET_REPO: agritheory/forten
-        TARGET_BRANCH: docs-vuepress
+        TARGET_BRANCH: gh-pages
         BUILD_SCRIPT: npm docs:build
         BUILD_DIR: docs/.vuepress/dist/
