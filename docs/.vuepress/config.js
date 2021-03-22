@@ -3,6 +3,7 @@ module.exports = {
   description: 'modular tools for overmind',
   theme: 'vuepress-theme-succinct',
   globalUIComponents: ['ThemeManager'],
+  base: '/forten/',
   themeConfig: {
     displayAllHeaders: true,
     sidebar: 'auto',
