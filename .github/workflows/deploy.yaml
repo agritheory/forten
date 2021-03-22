@@ -13,4 +13,4 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages
           FOLDER: "docs/.vuepress/dist"
-          BUILD_SCRIPT: npm run-script integrationTest
+          BUILD_SCRIPT: npm run-script docs:build
