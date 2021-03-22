@@ -7,10 +7,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@master
+      uses: actions/checkout@docs-vuepress
 
     - name: Build
-      uses: agritheory/forten@docs-vuepress
+      uses: agritheory/forten
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         TARGET_REPO: agritheory/forten
