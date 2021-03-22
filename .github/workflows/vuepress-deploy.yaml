@@ -6,10 +6,10 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
-      uses: actions/checkout@docs-vuepress
+    # - name: Checkout
+    #   uses: actions/checkout@master
 
-    - name: forten
+    - name: Build
       uses: agritheory/forten@docs-vuepress
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
