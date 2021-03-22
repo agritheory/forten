@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: fortenlogo.png
+heroImage: /fortenlogo.png
 heroText: null
 tagline: modular tools for Overmind
 actionText: Get Started →
