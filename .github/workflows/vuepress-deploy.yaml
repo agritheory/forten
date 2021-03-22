@@ -1,16 +1,15 @@
-name: Deploy to GitHub pages
-on: [push]
-jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout
-      uses: actions/checkout@master
-
-    - name: Build
-      uses: agritheory/forten@master
-      env:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        TARGET_BRANCH: gh-pages
-        BUILD_SCRIPT: npm run docs:build
-        BUILD_DIR: docs/.vuepress/dist/
+language: node_js
+node_js:
+  - lts/*
+install:
+  - npm ci
+script:
+  - npm run docs:build
+deploy:
+  provider: pages
+  skip_cleanup: true
+  local_dir: docs/.vuepress/dist
+  github_token: $GITHUB_TOKEN
+  keep_history: true
+  on:
+    branch: docs-vuepress
